@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class BasePageLocators:
-    # кнопка скрыть уведомления о cookies
+    # кнопка скрытия уведомления о cookies
     BUTTON_CONFIRM_COOKIES = (By.XPATH, "//*[contains(@class,'App_CookieButton__3cvqF')]")
     # кнопка "Заказать" наверху страницы
     BUTTON_ORDER_TOP = (By.XPATH, "//button[@class='Button_Button__ra12g']")
