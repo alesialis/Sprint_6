@@ -8,7 +8,6 @@ class TestTransitions:
     @allure.description('При клике по логотипу открывается страница Дзен')
     def test_transition_by_yandex_logo(self, driver):
         main_page = MainPage(driver)
-
         # скрыть уведомление о cookies
         main_page.confirm_cookies()
         # кликнуть на лого Яндекса
@@ -24,7 +23,6 @@ class TestTransitions:
     @allure.description('При клике по логотипу открывается страница Дзен')
     def test_transition_by_scooter_logo(self, driver):
         main_page = MainPage(driver)
-
         # скрыть уведомление о cookies
         main_page.confirm_cookies()
         # url главной страницы Самоката

@@ -4,16 +4,7 @@ import allure
 from locators.loc_main_page import MainPageLocators
 from pages.base_page import BasePage
 from locators.loc_base_page import BasePageLocators
-
-
-@allure.step('Определить локатор вопроса')
-def loc_questions(number):
-    return MainPageLocators.QUESTIONS[number]
-
-
-@allure.step('Определить локатор ответа')
-def loc_answers(number):
-    return MainPageLocators.ANSWERS[number]
+from helpers import loc_questions, loc_answers
 
 
 class MainPage(BasePage):
@@ -21,6 +12,7 @@ class MainPage(BasePage):
     @allure.step('Кликнуть на кнопку скрытия уведомления о cookies')
     def confirm_cookies(self):
         self.click(BasePageLocators.BUTTON_CONFIRM_COOKIES)
+
     @allure.step('Скролл до раздела faq')
     def scroll_to_questions(self):
         self.scroll(MainPageLocators.QUESTIONS[1])

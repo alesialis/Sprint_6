@@ -12,7 +12,6 @@ class TestQuestionsOnMainPage:
     def test_get_answers_on_main_page(self, driver, question):
         number, question = question
         main_page = MainPage(driver)
-
         # скрыть уведомление о cookies
         main_page.confirm_cookies()
         # скролл до faq

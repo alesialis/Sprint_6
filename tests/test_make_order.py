@@ -13,7 +13,6 @@ class TestMakeOrder:
     def test_make_order_by_top_button(self, driver, customer_data):
         main_page = MainPage(driver)
         order_page = OrderPage(driver)
-
         # скрыть уведомление о cookies
         main_page.confirm_cookies()
         # клик по верхней кнопке "Заказать"

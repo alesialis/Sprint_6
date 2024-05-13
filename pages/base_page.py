@@ -37,5 +37,3 @@ class BasePage:
     @allure.step('Ожидание заголовка')
     def wait_for_title(self, title):
         WebDriverWait(self.driver, 5).until(expected_conditions.title_is(title))
-
-
